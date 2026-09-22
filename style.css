@@ -1,0 +1,140 @@
+* {
+    color: white;
+    font-family: 'JetBrains Mono';
+}
+a {
+    text-decoration: none;
+}
+@font-face {
+    font-family: 'Neon Cursive';
+    src: url('./resources/fonts/neon-cursive.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('./resources/fonts/JetBrainsMonoNerdFontPropo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Moon Flower';
+    src: url('./resources/fonts/Moon Flower.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media (orientation: landscape) {
+    .bg{
+        width: 100%;
+    }
+}
+@media (orientation: portrait) {
+    .bg{
+        height: 100%;
+    }
+}
+@media (min-width: 1350px) {
+    .flex-big-col-small-row {
+        flex-direction: column;
+    }
+    .flex-big-row-small-col {
+        flex-direction: row;
+    }
+    .container-main > div > * {
+        margin: 10px 30px;
+    }
+}
+@media (max-width: 1350px) {
+    .flex-big-col-small-row {
+        flex-direction: row;
+    }
+    .flex-big-row-small-col {
+        flex-direction: column;
+    }
+    .small-hide {
+        display: none;
+    }
+}
+    .black {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    .container-main {
+        margin-top: min(20%, 105px);
+        align-self: center;
+        justify-self: center;
+        width:min-content;
+        max-width: 98%;
+        height:min-content;
+        padding: 10px;
+        border-radius: 30px;
+    }
+    .flex-column {
+        display: flex;
+        flex-direction: column;
+    }
+    .flex-row {
+        display: flex;
+        flex-direction: row;
+    }
+    .flex-nodir {
+        display: flex;
+    }
+    .flex-big-col-small-row {
+        display: flex;
+    }
+    .flex-big-row-small-col {
+        display: flex;
+    }
+    .justify-align-center {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .neon{
+        font-family: 'Neon Cursive';
+        color: #ffc7dd;
+        filter: contrast(110%);
+        filter: brightness(110%);
+        text-shadow:
+        0 0 2px #fff,
+        0 0 5px #fff,
+        0 0 7px #fff,
+        0 0 12px #f09,
+        0 0 25px #f09,
+        0 0 36px #f09,
+        0 0 50px #f09,
+        0 0 70px #f09;
+    }
+    .font-large {
+        font-size: clamp(22px, 7vw, 40px);
+    }
+    .font-medium {
+        font-size: clamp(17px, 5vw, 25px);
+    }
+    .icon {
+        font-size: clamp(30px, 10vw, 50px);
+        margin: clamp(17px, 5vw, 25px);
+    }
+    .width-min{
+        width: min-content;
+    }
+    #pfp {
+        width: min(200px, 80%);
+        border-radius: 9999px;
+    }
+    #me-desc {
+        font-family: 'Moon Flower';
+        font-size: 60px;
+    }
+    #socials {
+        padding: 5px 10px 0px 10px;
+    }
+    #bg{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        z-index: -1;
+    }
